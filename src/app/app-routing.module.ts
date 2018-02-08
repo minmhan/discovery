@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
 import { MapComponent } from './map/map.component';
 import { enableDebugTools } from '@angular/platform-browser/src/browser/tools/tools';
+import { SettingsComponent } from './settings/settings.component';
 
 const appRoutes: Routes = [
     { 
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
             }
         ]
     },
+    { path: 'settings', component: SettingsComponent },
     { path: 'map', component: MapComponent }
 ];
 

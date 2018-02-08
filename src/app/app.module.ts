@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,12 @@ import { AppSidebarComponent, AppSidebarNavTitleComponent, AppSidebarNavDropdown
 AppSidebarNavItemComponent, AppSidebarNavLinkComponent } from './main/app-sidebar/app-sidebar.component';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
 import { MapComponent } from './map/map.component';
+import { SettingsComponent } from './settings/settings.component';
+import { SIDEBAR_TOGGLE_DIRECTIVES } from './main/app-sidebar/app-sidebar.directive';
+
+// Import 3rd party components
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 
 @NgModule({
@@ -24,11 +30,15 @@ import { MapComponent } from './map/map.component';
     AppSidebarNavTitleComponent,
     AppSidebarNavDropdownComponent,
     AppSidebarNavLinkComponent,
-    MapComponent
+    MapComponent,
+    SettingsComponent,
+    SIDEBAR_TOGGLE_DIRECTIVES
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BsDropdownModule.forRoot(),
+    TabsModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,5 @@
+1. Authentication
+2. Logon / Logout
+3. Install HighChart
+4. Install D3JS
+5. Currently used ngx-bootstrap. Check ng-bootstrap feature also
